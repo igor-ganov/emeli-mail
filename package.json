@@ -1,0 +1,31 @@
+{
+  "name": "@emeli/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Emeli mail — hub CLI: scaffold, dev, test and build the polyrepo",
+  "bin": {
+    "emeli": "./cli/src/main.ts"
+  },
+  "scripts": {
+    "cli": "bun run cli/src/main.ts",
+    "doctor": "bun run cli/src/main.ts doctor",
+    "dev": "bun run cli/src/main.ts dev",
+    "test": "bun test cli/src"
+  },
+  "engines": {
+    "bun": ">=1.3.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igor-ganov/emeli-mail.git"
+  },
+  "author": "igor-ganov",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "^1.2.0",
+    "typescript": "^5.9.3"
+  }
+}
