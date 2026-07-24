@@ -22,12 +22,16 @@ this foundation session, `[ ]` pending.
 - [x] **T12** Message-list component composing `ui-message-row` — R3 — `emeli-mail-ui-message-list`
 - [x] **T13** App shell composition (folders / list / reader) in Astro + Lit — NFR1 — `emeli-mail-shell` (verified on the in-memory provider)
 
-## Next (M2+)
+## M2 — Compose & send (this session)
 
-- [ ] **T10-live** Register a Yahoo OAuth app; wire the live IMAP/TLS transport in the shell, swap the fake for the Yahoo port
+- [x] **T15** Compose component + send pipeline through `MailPort.send` — `emeli-mail-ui-compose` + shell (lands in Sent)
+
+## Next
+
+- [ ] **T10-live** Register a Yahoo OAuth app; wire the live IMAP/TLS + SMTP transport in the shell, swap the fake for the Yahoo port (also enables live send)
 - [ ] **T14** Outlook (Graph) and Gmail (Gmail API) adapters — arch §Protocol
-- [ ] **T15** Compose + send pipeline through `MailPort.send` — R (send)
-- [ ] **T16** Virtualize the message list for large mailboxes — R3
+- [ ] **T16** Attachments in compose + send
+- [ ] **T17** Virtualize the message list for large mailboxes — R3
 
 ## Definition of done (per library)
 

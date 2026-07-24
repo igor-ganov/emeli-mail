@@ -25,10 +25,11 @@ in-memory provider; the shell reads, renders safely, and blocks tracking.
       (`@emeli/sanitize`, `@emeli/ui-message-body`)
 - [x] Message list + reader composition (`@emeli/ui-message-list`, shell)
 
-### M2 — Compose & send
-- Compose component + draft model
-- `MailPort.send` (SMTP submission via XOAUTH2)
-- Attachments
+### M2 — Compose & send  ·  _built on the in-memory provider_
+- [x] Compose component + draft model (`@emeli/ui-compose`)
+- [x] Send through `MailPort.send`; message lands in Sent (shell)
+- [ ] Live SMTP submission via XOAUTH2 (with the Yahoo transport)
+- [ ] Attachments
 
 ### M3 — Outlook
 - Microsoft Graph adapter (delta + webhooks)

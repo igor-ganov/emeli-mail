@@ -51,6 +51,7 @@ built from many small, independently versioned repositories — see
 | [`emeli-mail-ui-message-row`](https://github.com/igor-ganov/emeli-mail-ui-message-row) | `@emeli/ui-message-row` | Headless message-list-row component |
 | [`emeli-mail-ui-message-list`](https://github.com/igor-ganov/emeli-mail-ui-message-list) | `@emeli/ui-message-list` | Headless listbox composing message rows |
 | [`emeli-mail-ui-message-body`](https://github.com/igor-ganov/emeli-mail-ui-message-body) | `@emeli/ui-message-body` | Sandboxed email-body renderer (CSP iframe) |
+| [`emeli-mail-ui-compose`](https://github.com/igor-ganov/emeli-mail-ui-compose) | `@emeli/ui-compose` | Headless compose form (recipient parsing, validation) |
 | [`emeli-mail-demo`](https://github.com/igor-ganov/emeli-mail-demo) | `@emeli/demo` | Component playground (self-hosted "storybook") |
 | [`emeli-mail-core`](https://github.com/igor-ganov/emeli-mail-core) | `@emeli/core` | Domain model, `MailPort` contract, in-memory fake |
 | [`emeli-mail-sanitize`](https://github.com/igor-ganov/emeli-mail-sanitize) | `@emeli/sanitize` | Email-HTML sanitizer + remote-content gate |
