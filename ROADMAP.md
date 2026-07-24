@@ -1,7 +1,8 @@
 # Roadmap — emeli-mail
 
-Tracked as a GitHub Project board under **igor-ganov**. This file is the
-human-readable mirror; the board is the source of truth for status.
+Tracked on the GitHub Project board
+[**Emeli-mail Roadmap**](https://github.com/users/igor-ganov/projects/3). This
+file is the human-readable mirror; the board is the source of truth for status.
 
 ## Milestones
 
