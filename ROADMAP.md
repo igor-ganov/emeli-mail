@@ -6,21 +6,24 @@ file is the human-readable mirror; the board is the source of truth for status.
 
 ## Milestones
 
-### M0 — Foundation  ·  _in progress_
+### M0 — Foundation  ·  _done_
 Prove the architecture at the smallest useful size.
-- Hub: vision, architecture, spec, roadmap, `emeli` CLI
-- `@emeli/tokens` — design tokens (light/dark)
-- `@emeli/ui-message-row` — first headless component
-- `@emeli/theme-terracotta` — pluggable style pack
-- `@emeli/demo` — component playground
+- [x] Hub: vision, architecture, spec, roadmap, `emeli` CLI
+- [x] `@emeli/tokens` — design tokens (light/dark)
+- [x] `@emeli/ui-message-row` — first headless component
+- [x] `@emeli/theme-terracotta` — pluggable style pack
+- [x] `@emeli/demo` — component playground
 
-### M1 — Read a Yahoo inbox
-The first user-visible capability: sign in and read mail.
-- Tauri shell + secure token storage
-- `MailPort` + in-memory fake
-- Yahoo adapter (OAuth 2.0, IMAP IDLE, XOAUTH2)
-- Sandboxed body renderer (sanitizer + CSP + remote-content gate)
-- Message list (virtualized) + reader composition
+### M1 — Read an inbox  ·  _built; live Yahoo pending credentials_
+The first user-visible capability: read mail. The whole slice runs today on the
+in-memory provider; the shell reads, renders safely, and blocks tracking.
+- [x] Tauri shell + secure keychain token storage (`emeli-mail-shell`)
+- [x] `MailPort` + in-memory fake (`@emeli/core`)
+- [~] Yahoo adapter — XOAUTH2, OAuth 2.0, IMAP parsing built & tested
+      (`@emeli/provider-yahoo`); live wiring needs a Yahoo OAuth app
+- [x] Sanitizer + sandboxed body renderer with remote-content gate
+      (`@emeli/sanitize`, `@emeli/ui-message-body`)
+- [x] Message list + reader composition (`@emeli/ui-message-list`, shell)
 
 ### M2 — Compose & send
 - Compose component + draft model

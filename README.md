@@ -49,7 +49,13 @@ built from many small, independently versioned repositories — see
 | [`emeli-mail-tokens`](https://github.com/igor-ganov/emeli-mail-tokens) | `@emeli/tokens` | Design tokens (CSS custom properties + typed TS) |
 | [`emeli-mail-theme-terracotta`](https://github.com/igor-ganov/emeli-mail-theme-terracotta) | `@emeli/theme-terracotta` | Default pluggable style pack |
 | [`emeli-mail-ui-message-row`](https://github.com/igor-ganov/emeli-mail-ui-message-row) | `@emeli/ui-message-row` | Headless message-list-row component |
+| [`emeli-mail-ui-message-list`](https://github.com/igor-ganov/emeli-mail-ui-message-list) | `@emeli/ui-message-list` | Headless listbox composing message rows |
+| [`emeli-mail-ui-message-body`](https://github.com/igor-ganov/emeli-mail-ui-message-body) | `@emeli/ui-message-body` | Sandboxed email-body renderer (CSP iframe) |
 | [`emeli-mail-demo`](https://github.com/igor-ganov/emeli-mail-demo) | `@emeli/demo` | Component playground (self-hosted "storybook") |
+| [`emeli-mail-core`](https://github.com/igor-ganov/emeli-mail-core) | `@emeli/core` | Domain model, `MailPort` contract, in-memory fake |
+| [`emeli-mail-sanitize`](https://github.com/igor-ganov/emeli-mail-sanitize) | `@emeli/sanitize` | Email-HTML sanitizer + remote-content gate |
+| [`emeli-mail-provider-yahoo`](https://github.com/igor-ganov/emeli-mail-provider-yahoo) | `@emeli/provider-yahoo` | Yahoo adapter: XOAUTH2, OAuth 2.0, IMAP parsing |
+| [`emeli-mail-shell`](https://github.com/igor-ganov/emeli-mail-shell) | — | Tauri + Astro/Lit desktop composition |
 
 Planned but not yet created libraries (shell, protocol adapters, more
 components) are listed in [`ROADMAP.md`](ROADMAP.md).

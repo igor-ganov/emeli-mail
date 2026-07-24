@@ -13,16 +13,21 @@ this foundation session, `[ ]` pending.
 - [x] **T6** `@emeli/cli`: `doctor`, `new component`, `dev`, `test`, `build` — R1
 - [x] **T7** Create the 5 GitHub repos under igor-ganov, push, open the roadmap Project
 
-## Next (subsequent sessions)
+## M1 — Read a Yahoo inbox (this session)
 
-- [ ] **T8** Tauri shell repo: window, tray, secure token storage, IPC surface — arch §Trust
-- [ ] **T9** `MailPort` interface + in-memory fake adapter for tests — arch §Protocol
-- [ ] **T10** Yahoo adapter: OAuth 2.0 device/redirect flow, IMAP IDLE, XOAUTH2 — R (Yahoo)
-- [ ] **T11** Sandboxed body renderer: sanitizer + CSP iframe + remote-content gate — R6
-- [ ] **T12** Message-list component (virtualized) composing `ui-message-row` — R3
-- [ ] **T13** App shell composition (folders / list / reader) in Astro + Lit — NFR1
+- [x] **T8** Tauri shell repo: window, secure keychain token storage, IPC surface — arch §Trust — `emeli-mail-shell` (cargo check green)
+- [x] **T9** `MailPort` interface + in-memory fake adapter for tests — arch §Protocol — `emeli-mail-core`
+- [~] **T10** Yahoo adapter: OAuth 2.0, IMAP, XOAUTH2 — `emeli-mail-provider-yahoo` built & tested; **live wiring pending Yahoo OAuth credentials**
+- [x] **T11** Sandboxed body renderer: sanitizer + CSP iframe + remote-content gate — R6 — `emeli-mail-sanitize` + `emeli-mail-ui-message-body`
+- [x] **T12** Message-list component composing `ui-message-row` — R3 — `emeli-mail-ui-message-list`
+- [x] **T13** App shell composition (folders / list / reader) in Astro + Lit — NFR1 — `emeli-mail-shell` (verified on the in-memory provider)
+
+## Next (M2+)
+
+- [ ] **T10-live** Register a Yahoo OAuth app; wire the live IMAP/TLS transport in the shell, swap the fake for the Yahoo port
 - [ ] **T14** Outlook (Graph) and Gmail (Gmail API) adapters — arch §Protocol
 - [ ] **T15** Compose + send pipeline through `MailPort.send` — R (send)
+- [ ] **T16** Virtualize the message list for large mailboxes — R3
 
 ## Definition of done (per library)
 
